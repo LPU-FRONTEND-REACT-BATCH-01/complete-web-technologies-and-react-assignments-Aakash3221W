@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Registration Form</title>
+</head>
+<body>
+
+    <h2>Hotel Registration Form</h2>
+
+    <form>
+
+        First Name:
+        <input type="text" name="firstname" required minlength="2" pattern="[A-Za-z]+">
+        <br><br>
+
+        Last Name:
+        <input type="text" name="lastname" required minlength="2" pattern="[A-Za-z]+">
+        <br><br>
+
+        Gender:
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+
+        Email:
+        <input type="email" name="email" required>
+        <br><br>
+
+        Room Type:
+        <select name="roomtype" required>
+            <option value="">--Select Room--</option>
+            <option>Single</option>
+            <option>Double</option>
+            <option>Suite</option>
+        </select>
+        <br><br>
+
+        Number of Guests:
+        <select name="guests" required>
+            <option value="">--Select Guests--</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <br><br>
+
+        Arrival Date & Time:
+        <input type="datetime-local" name="arrival" required>
+        <br><br>
+
+        Departure Date:
+        <input type="date" name="departure" required>
+        <br><br>
+
+        City:
+        <select name="city" required>
+            <option value="">--Select City--</option>
+            <option>Delhi</option>
+            <option>Mumbai</option>
+            <option>Jaipur</option>
+            <option>Bangalore</option>
+        </select>
+        <br><br>
+
+        Agree to Terms & Conditions:
+        <input type="checkbox" name="terms" required> I Agree
+        <br><br>
+
+        Special Requests:<br>
+        <textarea name="requests" rows="4" cols="30" maxlength="200" placeholder="Max 200 characters"></textarea>
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Heading {
+            color: rgb(30, 166, 9);
+        }    
+            a {
+                color: blue;
+                text-decoration: none;
+            }
+            a:hover {
+                color: red;
+            }
+            table {
+                width: 30%;
+                border-collapse: collapse;
+            }
+
+            form{
+                color: rgb(181, 68, 68);
+            }
+            .place {
+                color: rgb(68, 68, 181);
+            }
+             .topic {
+                color: rgb(68, 181, 68);
+            }
+            
+    </style>
+</head>
+<body>
+    <h1 class="Heading">About Page</h1>
+
+    <p>This is the about page for our website.</p>
+
+    <h2 class="Heading">Our Location</h2>
+    <ul>
+        <li>USA</li>
+        <ul>
+            <li><a href="new-york.html">New York</a></li>
+            <li><a href="los-angeles.html">Los Angeles</a></li>
+            <li><a href="philly.html">Philly</a></li>
+        </ul>
+        <li>World</li>
+        <ul>
+            <li><a href="ottawa.html">Ottawa</a></li>
+            <li><a href="sydney.html">Sydney</a></li>
+        </ul>
+    </ul>
+    <table border="1">
+        <tr>
+            <th>
+                Location
+            </th>
+            <th>
+                Topic
+            </th>
+        </tr>
+        <tr>
+            <td  class="place">
+                New York
+            </td>
+            <td class="topic">
+               JavaScript & Jquery 
+            </td>
+        </tr>
+        <tr>
+            <td class="place">
+                San Francisco
+            </td>
+            <td class="topic">
+               HTML & CSS
+            </td>
+        </tr>
+    </table>
+
+    <h2 class="Heading">Sign Up!</h2>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <select name="location" id="location">
+            <option value="None">-- Select Location --</option>
+            <option value="new-york">New York</option>
+            <option value="los-angeles">Los Angeles</option>
+            <option value="san-francisco">San Francisco</option>
+        </select>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </fieldset>
+
+        <label for="experience">Experience:</label><br>
+        <textarea name="experience" id="experience" placeholder="Tell us about your experience..."></textarea><br>
+        <input type="submit" value="Sign Up">
+    </form>
+</body>
+</html>

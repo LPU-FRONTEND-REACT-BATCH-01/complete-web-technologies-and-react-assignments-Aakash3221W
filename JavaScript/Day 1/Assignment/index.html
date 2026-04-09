@@ -8,18 +8,18 @@
         function calculateDistcountedPrice(price) {
             let discount;
             if (price > 6000) {
-                discount = 25; 
+                discount = 0.25; 
             } else if (price > 2000) {
-                discount = 15; 
+                discount = 0.15; 
             }
             return discount;
         }
         let price = Number(prompt("Enter the price of the product:"));
         let discountedPrice = calculateDistcountedPrice(price);
         if (discountedPrice !== undefined) {
-            alert(`The discounted price is: ${discountedPrice}%`);
+            alert(`The discounted price is: ${price - (discountedPrice * price)}`);
         } else {
-            alert("No discount applicable.");
+            alert("No discount applicable. price: "+price);
         }
 
     </script>

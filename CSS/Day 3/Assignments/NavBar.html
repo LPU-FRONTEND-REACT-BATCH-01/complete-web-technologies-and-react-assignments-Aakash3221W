@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        nav{
+            width: 100%;
+            height: 54px;
+            background-color: #232730;
+        }
+        nav ul{
+            text-decoration-style: none;
+        }
+
+        .container{
+            width: 100%;
+            height: 100%;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-version{
+            border: 2px solid red;
+            height: 54px;
+            width: 7%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            flex: 0 0 100px;
+        }
+
+        .logo-version span{
+            color: #888c99;
+        }
+
+        .logo-version img{
+            width: 40px;
+            height: 40px;
+        }
+
+        .search{
+            border: 2px solid red;
+            height: 54px;
+            width: 60%;
+            display: flex;
+            align-items: center;
+            flex: 1 1 auto;
+        }
+
+        .search-btn{
+            width: 100%;
+            height: 35px;
+            background-color: #333945;
+            border-radius: 30px;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            color: #888c99;
+        }
+
+        .search-left{
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            gap: 8px;
+        }
+        .nav-links{
+            border: 2px solid red;
+            height: 54px;
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: #d3d4da;
+            flex: 0 0 400px;
+        }
+
+        .nav-links li{
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.2s;
+            font-weight: 600;
+        }
+
+        .icons{
+            border: 2px solid red;
+            height: 54px;
+            width: 15%;
+        }
+
+        ul{
+            list-style: none;
+        }
+        .shortcut{
+            display: flex;
+            gap: 5px;
+        }
+
+    .key{
+        font-size: 12px;
+        background-color: #232730;
+        padding: 3px 6px;
+        border-radius: 6px;
+        color: #888c99;
+    }
+    .nav-links{
+        color: #d3d4da;
+
+
+    }
+    .icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex: 0 0 200px;
+    }
+    .icons .search-icon{
+        display: none;
+    }
+    .icons img{
+        height: 32px;
+        width: 32px;
+    }
+    @media (max-width: 1027px){
+        .nav-links{
+            display: none;
+        }
+    }
+    @media (max-width: 768px){
+        .search{
+            display: none;
+        }
+        .container{
+            justify-content: space-between;
+        }
+        .icons .search-icon{
+        display: block;
+    }
+
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="container">
+
+            <!-- LOGO -->
+            <ul class="logo-version">
+                <li>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="">
+                </li>
+                <li>
+                    <span>v19.2</span>
+                </li>
+            </ul>
+
+            <!-- SEARCH -->
+            <div class="search">
+                <button class="search-btn">
+                    <span class="search-left">
+                        🔍 Search
+                    </span>
+
+                    <div class="shortcut">
+                        <span class="key">Ctrl</span>
+                        <span class="key">K</span>
+                    </div>
+                </button>
+            </div>
+
+            <!-- NAV LINKS -->
+            <ul class="nav-links">
+                <li>Learn</li>
+                <li>Reference</li>
+                <li>Community</li>
+                <li>Blog</li>
+            </ul>
+
+            <!-- ICONS -->
+            <ul class="icons">
+                <li class="search-icon"><img src="" alt=""></li>
+                <li><img src="Assets/sun-logo.png" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="Assets/github-logo.svg" alt=""></li>
+            </ul>
+
+        </div>
+    </nav>
+
+</body>
+</html>

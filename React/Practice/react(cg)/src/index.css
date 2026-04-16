@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    background-color: aquamarine;
+    color: cornflowerblue;
+    padding: 10px 20px;
+    border: 2px darkviolet solid;
+    border-radius: 10px;
+}
+
+.userCard{
+    background-color: blueviolet;
+    color: white;
+    border: 5px rgb(43, 37, 29) solid;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 10px ;
+}
+.users{
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+@media (max-width: 500px) {
+    .users{
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    
+}

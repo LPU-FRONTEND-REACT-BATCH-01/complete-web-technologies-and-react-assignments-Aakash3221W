@@ -1,0 +1,24 @@
+#fruits_heading{
+    color: red;
+    background-color: aquamarine;
+
+}
+.fruits{
+    color: blue;
+    background-color: lightyellow;
+
+}
+
+.fruits_table{
+    list-style: none;
+}
+
+.vegetables{
+    color: green;
+    background-color:   lightgray;
+}
+
+.fruits_heading{
+    color: purple;
+    font-size: 100px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Order Form</title>
+</head>
+<body>
+    
+
+    <h3><mark>🍕 Pizza Mania 🍕</mark></h3>
+    <hr>
+
+    <h1>🍕 Pizza Mania 🍕</h1>
+
+
+    <form method="POST" action="#">
+
+        <!-- First Name -->
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required minlength="2">
+        <br><br>
+
+        <!-- Last Name -->
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required>
+        <br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Contact -->
+        <label for="contact">Contact:</label><br>
+        <input type="tel" id="contact" name="contact" 
+               pattern="[0-9]{10}" 
+               placeholder="10 digit number" required>
+        <br><br>
+
+        <!-- Date -->
+        <label for="date">Preferred Delivery Date:</label><br>
+        <input type="date" id="date" name="date" required>
+        <br><br>
+
+        <!-- Size -->
+        <label>Size:</label><br>
+        <input type="radio" id="small" name="size" value="small" required>
+        <label for="small">Small</label>
+
+        <input type="radio" id="medium" name="size" value="medium">
+        <label for="medium">Medium</label>
+
+        <input type="radio" id="large" name="size" value="large">
+        <label for="large">Large</label>
+        <br><br>
+
+        <!-- Outlet -->
+         
+        <label for="outlet"><mark>Outlet:</mark></label><br>
+        <select id="outlet" name="outlet" required>
+            <option value="">Select Outlet</option>
+            <option>Delhi</option>
+            <option>Mumbai</option>
+            <option>Bangalore</option>
+        </select>
+        <br><br>
+
+        <!-- Menu -->
+<<<<<<< HEAD:HTML/Day 3/Assignments/PizzaOrderForm.html
+        <i><h2>Menu</h2></i>
+=======
+        <i><h2>Menu</h2><i>
+>>>>>>> f19236eea5035baa7db3b203c56be651e99b7e49:HTML/Day 3/Assignments/PizzaOderForm.html
+
+        <table>
+
+            <tr>
+                <td>
+                    <img src="https://imgs.search.brave.com/t4ibtfW-RszPSW-PrrG__9Iamy9X_faeQT1KG--DOX0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTc4/OTg5MzMwMS9waG90/by9oZWFydC1zaGFw/ZWQtcGVwcGVyb25p/LXBpenphLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz04Ujh1/cTVXTmE2Mlp0UUVR/OTl6bldUdUE2b284/VXNtWE1TUExXMGpL/a0VjPQ" width="80">
+                </td>
+                <td>
+                    <input type="checkbox" name="pizza[]" value="hawaiian">
+                    <label>Hawaiian</label>
+                    <strike>250₹</strike> 150₹
+                    Quantity:
+                    <input type="number" min="1" max="5" value="1">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Pepperoni_pizza.jpg/200px-Pepperoni_pizza.jpg" width="80">
+                </td>
+                <td>
+                    <input type="checkbox" name="pizza[]" value="pepperoni">
+                    <label>Pepperoni</label>
+                    <strike>240₹</strike> 140₹
+                    Quantity:
+                    <input type="number" min="1" max="5" value="1">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/200px-Pizza-3007395.jpg" width="80">
+                </td>
+                <td>
+                    <input type="checkbox" name="pizza[]" value="veggie">
+                    <label>Veggie</label>
+                    <strike>220₹</strike> 120₹
+                    Quantity:
+                    <input type="number" min="1" max="5" value="1">
+                </td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <input type="submit" value="Order Now">
+
+    </form>
+
+</body>
+</html>

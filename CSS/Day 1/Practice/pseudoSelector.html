@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+        a:visited {
+            color: purple;
+        }
+        a:hover {
+            color: red;
+        }
+        a:active {
+            color: orange;
+        }
+        input:focus {
+            background-color: yellow;
+        }
+        p:hover::after{
+            content: " (Hovered)";
+            color: red;
+        }
+        p:hover::before{
+            content: ">> ";
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.facebook.com">Facebook</a>
+    <a href="https://www.twitter.com">Twitter</a>
+
+    <br>
+    <input type="text">
+
+    <p>This is a paragraph.</p>
+
+
+</body>
+</html>
